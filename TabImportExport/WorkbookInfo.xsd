@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WorkbookInfo" targetNamespace="http://tempuri.org/WorkbookInfo.xsd" xmlns:mstns="http://tempuri.org/WorkbookInfo.xsd" xmlns="http://tempuri.org/WorkbookInfo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.TabImportExport.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="_workbooksTableAdapter" GeneratorDataComponentClassName="_workbooksTableAdapter" Name="_workbooks" UserDataComponentName="_workbooksTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     name,  project_name ,owner_name, workbook_url
+FROM         "public"._workbooks</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="owner_name" DataSetColumn="owner_name" />
+              <Mapping SourceColumn="project_name" DataSetColumn="project_name" />
+              <Mapping SourceColumn="workbook_url" DataSetColumn="workbook_url" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WorkbookInfo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="WorkbookInfo" msprop:Generator_UserDSName="WorkbookInfo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="_workbooks" msprop:Generator_TableClassName="_workbooksDataTable" msprop:Generator_TableVarName="table_workbooks" msprop:Generator_TablePropName="_workbooks" msprop:Generator_RowDeletingName="_workbooksRowDeleting" msprop:Generator_UserTableName="_workbooks" msprop:Generator_RowChangingName="_workbooksRowChanging" msprop:Generator_RowEvHandlerName="_workbooksRowChangeEventHandler" msprop:Generator_RowDeletedName="_workbooksRowDeleted" msprop:Generator_RowEvArgName="_workbooksRowChangeEvent" msprop:Generator_RowChangedName="_workbooksRowChanged" msprop:Generator_RowClassName="_workbooksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="owner_name" msprop:Generator_ColumnVarNameInTable="columnowner_name" msprop:Generator_ColumnPropNameInRow="owner_name" msprop:Generator_ColumnPropNameInTable="owner_nameColumn" msprop:Generator_UserColumnName="owner_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="project_name" msprop:Generator_ColumnVarNameInTable="columnproject_name" msprop:Generator_ColumnPropNameInRow="project_name" msprop:Generator_ColumnPropNameInTable="project_nameColumn" msprop:Generator_UserColumnName="project_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="workbook_url" msprop:Generator_ColumnVarNameInTable="columnworkbook_url" msprop:Generator_ColumnPropNameInRow="workbook_url" msprop:Generator_ColumnPropNameInTable="workbook_urlColumn" msprop:Generator_UserColumnName="workbook_url" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4095" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="WorkbooksToImport" msprop:Generator_TableClassName="WorkbooksToImportDataTable" msprop:Generator_TableVarName="tableWorkbooksToImport" msprop:Generator_TablePropName="WorkbooksToImport" msprop:Generator_RowDeletingName="WorkbooksToImportRowDeleting" msprop:Generator_UserTableName="WorkbooksToImport" msprop:Generator_RowChangingName="WorkbooksToImportRowChanging" msprop:Generator_RowEvHandlerName="WorkbooksToImportRowChangeEventHandler" msprop:Generator_RowDeletedName="WorkbooksToImportRowDeleted" msprop:Generator_RowEvArgName="WorkbooksToImportRowChangeEvent" msprop:Generator_RowChangedName="WorkbooksToImportRowChanged" msprop:Generator_RowClassName="WorkbooksToImportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Project" msprop:Generator_ColumnVarNameInTable="columnProject" msprop:Generator_ColumnPropNameInRow="Project" msprop:Generator_ColumnPropNameInTable="ProjectColumn" msprop:Generator_UserColumnName="Project" type="xs:string" minOccurs="0" />
+              <xs:element name="Owner" msprop:Generator_ColumnVarNameInTable="columnOwner" msprop:Generator_ColumnPropNameInRow="Owner" msprop:Generator_ColumnPropNameInTable="OwnerColumn" msprop:Generator_UserColumnName="Owner" type="xs:string" minOccurs="0" />
+              <xs:element name="UID" msprop:Generator_ColumnVarNameInTable="columnUID" msprop:Generator_ColumnPropNameInRow="UID" msprop:Generator_ColumnPropNameInTable="UIDColumn" msprop:Generator_UserColumnName="UID" type="xs:string" minOccurs="0" />
+              <xs:element name="Password" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnPropNameInTable="PasswordColumn" msprop:Generator_UserColumnName="Password" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
