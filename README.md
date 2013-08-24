@@ -3,6 +3,8 @@ DotNetImporterExporter
 
 A tool that can be used to export objects from Tableau Server and publish them elsewhere. 
 
+WARNING: Requires VS 2012 to edit and build. Tableau Software does NOT support this tool. If you are not familiar with .NET and Visual Studio, you will not be able to get this tool working and it frankly is not meant for you :)
+
 Setup:
 
 Task 1 - Enable remote access to the Tableau Server repository
